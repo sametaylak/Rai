@@ -1,7 +1,5 @@
 #include "Application.h"
 
-#include <GLFW/glfw3.h>
-
 namespace Rai
 {
   Application::Application()

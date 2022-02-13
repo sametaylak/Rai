@@ -23,6 +23,7 @@ project "Rai"
   }
 
   includeGLFW()
+  includeGlad()
 
   filter "configurations:Debug"
     defines "RAI_DEBUG"

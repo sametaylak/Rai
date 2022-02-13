@@ -1,5 +1,13 @@
 include "Dependencies.lua"
 
+function includeGlad()
+  includedirs "%{wks.location}/Rai/vendor/glad/include"
+end
+
+function linkGlad()
+  links "Glad"
+end
+
 function includeGLFW()
   includedirs "%{wks.location}/Rai/vendor/glfw/include"
 end
@@ -27,6 +35,7 @@ function useRai()
   links "Rai"
 
   linkGLFW()
+  linkGlad()
 end
 
 workspace "Rai"
@@ -48,6 +57,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 group "Dependencies"
   include "vendor/premake"
+  include "Rai/vendor/glad"
 
 include "Rai"
 include "RaiEditor"

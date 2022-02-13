@@ -1,6 +1,6 @@
 # Binaries
 **/bin/
-bin-int/
+**/bin-int/
 
 # Visual Studio files and folder
 .vs/
