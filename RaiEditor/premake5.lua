@@ -13,17 +13,7 @@ project "RaiEditor"
     "src/**.cpp"
   }
 
-  includedirs
-  {
-    "%{wks.location}/Rai/src",
-    "%{wks.location}/Rai/vendor",
-    "%{wks.location}/Rai/vendor/spdlog/include",
-  }
-
-  links
-  {
-    "Rai"
-  }
+  useRai()
 
   filter "configurations:Debug"
     defines "RAI_DEBUG"

@@ -19,8 +19,10 @@ project "Rai"
   includedirs
   {
     "src",
-    "vendor/spdlog/include"
+    "vendor/spdlog/include",
   }
+
+  includeGLFW()
 
   filter "configurations:Debug"
     defines "RAI_DEBUG"

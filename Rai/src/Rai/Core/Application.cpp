@@ -1,9 +1,12 @@
 #include "Application.h"
 
+#include <GLFW/glfw3.h>
+
 namespace Rai
 {
   Application::Application()
   {
+    m_Window = new Window(800, 600, "Rai Engine");
   }
 
   Application::~Application()
@@ -12,6 +15,11 @@ namespace Rai
 
   void Application::Run()
   {
-    while (true);
+    while (!m_Window->ShouldClose())
+    {
+      m_Window->PollEvents();
+
+      m_Window->SwapBuffers();
+    }
   }
 }
