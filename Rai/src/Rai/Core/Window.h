@@ -12,6 +12,8 @@ namespace Rai
     Window(int width, int height, const std::string& title);
     ~Window();
 
+    inline GLFWwindow* GetNativeWindow() { return m_Window; }
+
     bool ShouldClose() const noexcept;
 
     void PollEvents() const noexcept;

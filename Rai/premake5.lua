@@ -14,12 +14,15 @@ project "Rai"
   {
     "src/**.h",
     "src/**.cpp",
+    "vendor/imgui/**.h",
+    "vendor/imgui/**.cpp",
   }
 
   includedirs
   {
     "src",
     "vendor/spdlog/include",
+    "vendor/imgui"
   }
 
   includeGLFW()
