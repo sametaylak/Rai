@@ -2,6 +2,8 @@
 **/bin/
 **/bin-int/
 
+imgui.ini
+
 # Visual Studio files and folder
 .vs/
 **.sln
