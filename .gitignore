@@ -3,6 +3,7 @@
 **/bin-int/
 
 imgui.ini
+tags
 
 # Visual Studio files and folder
 .vs/
